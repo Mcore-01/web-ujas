@@ -1,0 +1,83 @@
+/* .scrolling-image-container {
+  overflow: hidden;
+  height: 900px;
+}
+body{
+  background-color: black;
+}
+
+@keyframes slide {
+  0% {
+    transform: translate3d(150px, -1560px, 0) rotate(-12deg);
+  }
+  100% {
+    
+    transform: translate3d(600px, 560px, 0) rotate(-12deg);
+  }
+}
+.scrolling-image {
+  background: url("column-left.webp") repeat-y;
+  width: 400px;
+  height: 7000px;
+  animation: slide 12s linear infinite;
+
+  position: relative;
+  left: 600px;
+  top: -1560px;
+} */
+.scrolling-image-container {
+
+  height: 900px;
+  transform: rotate(-12deg);
+  position: absolute;
+  right: 0px;
+  overflow: clip;
+}
+body{
+  background-color: black;
+}
+/* @keyframes slide {
+  0% {
+    left: 600px;
+    top: -1560px;
+  }
+  100% {
+    left: 1000px;
+    top: -500px;
+  }
+} */
+/* @keyframes slide {
+  0% {
+    transform: translate3d(150px, -1560px, 0) rotate(-12deg);
+  }
+  100% {
+    
+    transform: translate3d(575px, 430px, 0) rotate(-12deg);
+  }
+}
+.scrolling-image {
+  background: url("column-left.webp") repeat-y;
+  width: 400px;
+  height: 7000px;
+  animation: slide 12s linear infinite reverse;
+
+  position: relative;
+  left: 600px;
+  top: -1560px;
+} */
+
+@keyframes slide2 {
+  0% {
+    margin-top: -2000px;
+  }
+  100% {
+    
+    margin-top: 1500px;
+  }
+}
+.scrolling-image-2 {
+  background: url("column-right.webp") repeat-y;
+  width: 290px;
+  height: 1950px;
+  animation: slide2 35s linear infinite;
+}
